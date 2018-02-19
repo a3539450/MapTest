@@ -58,12 +58,15 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 // app-defined int constant. The callback method gets the
                 // result of the request.
             }
+        }else{
+            mMap.setMyLocationEnabled(true);
+
         }
 
         /*if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             return;
         }else{
-        mMap.setMyLocationEnabled(true);
+
         }*/
         // Add a marker in Sydney and move the camera
        // LatLng sydney = new LatLng(-34, 151);
@@ -80,12 +83,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                         && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                     mMap.setMyLocationEnabled(true);
 
+
                     // permission was granted, yay! Do the
                     // contacts-related task you need to do.
 
                 } else {
-
-
                 }
                 return;
             }
