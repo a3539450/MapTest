@@ -28,12 +28,6 @@ public class httpActivity {
         if (headers != null) {
             Log.e(TAG, methodName);
             Log.d(TAG, "Return Headers:");
-            /*
-            for (Header h : headers) {
-                String _h = String.format(Locale.US, "%s : %s", h.getName(), h.getValue());
-                Log.d(TAG, _h);
-            }
-            */
 
             if (t != null) {
                 Log.d(TAG, "Throwable:" + t);
